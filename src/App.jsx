@@ -9,11 +9,16 @@ import { Dashboard } from './components/modules/Dashboard'
 import { Polos } from './components/modules/Polos'
 import { Instalacoes } from './components/modules/Instalacoes'
 import { PontosMedicao } from './components/modules/PontosMedicao'
+import PlacasOrificio from './components/modules/PlacasOrificio'
 import { Incertezas } from './components/modules/Incertezas'
 import { TrechosRetos } from './components/modules/TrechosRetos'
 import { TestesPocos } from './components/modules/TestesPocos'
 import { AnalisesQuimicas } from './components/modules/AnalisesQuimicas'
+import GestaoEquipamentos from './components/modules/GestaoEquipamentos'
+import MovimentacaoEquipamentos from './components/modules/MovimentacaoEquipamentos'
 import { Estoque } from './components/modules/Estoque'
+import MovimentacaoGeral from './components/modules/MovimentacaoGeral'
+import UsuariosGerenciamento from './components/modules/UsuariosGerenciamento'
 
 import './App.css'
 
@@ -51,10 +56,7 @@ function AppContent() {
       case 'pontos-medicao':
         return <PontosMedicao />
       case 'placas-orificio':
-        return <ModuloEmDesenvolvimento 
-          titulo="Placas de Orifício" 
-          descricao="Gerenciamento de placas de orifício" 
-        />
+        return <PlacasOrificio />
       case 'incertezas':
         return <Incertezas />
       case 'trechos-retos':
@@ -64,27 +66,15 @@ function AppContent() {
       case 'analises-quimicas':
         return <AnalisesQuimicas />
       case 'gestao-equipamentos':
-        return <ModuloEmDesenvolvimento 
-          titulo="Gestão de Equipamentos" 
-          descricao="Controle e gerenciamento de equipamentos" 
-        />
+        return <GestaoEquipamentos />
       case 'movimentacao-equipamentos':
-        return <ModuloEmDesenvolvimento 
-          titulo="Movimentação de Equipamentos" 
-          descricao="Controle de movimentação de equipamentos" 
-        />
+        return <MovimentacaoEquipamentos />
       case 'estoque':
         return <Estoque />
       case 'movimentacao':
-        return <ModuloEmDesenvolvimento 
-          titulo="Movimentação" 
-          descricao="Controle de movimentação geral" 
-        />
+        return <MovimentacaoGeral />
       case 'usuarios':
-        return <ModuloEmDesenvolvimento 
-          titulo="Usuários" 
-          descricao="Gerenciamento de usuários do sistema" 
-        />
+        return <UsuariosGerenciamento />
       case 'configuracoes':
         return <ModuloEmDesenvolvimento 
           titulo="Configurações" 
